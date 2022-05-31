@@ -1,8 +1,15 @@
 
+	//YBYB:Created from iat8.js, for Qualtrics
+define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
+
+	/**
+	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Gal
+	 * @param  {Object} options Options that replace the defaults...
+	 * @return {Object}         PIP script
+	**/
+
 	function iatExtension(options)
 	{
-	
-	define(['pipAPI', '[https://ctomkys.github.io/IAT/'], function(APIConstructor, Scorer, _) {
 		var API = new APIConstructor();		
 		var scorer = new Scorer();
         var piCurrent = API.getCurrent();
